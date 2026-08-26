@@ -1,1 +1,325 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lentes no nosso dia a dia</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- INÍCIO -->
+    <header class="inicio">
+
+        <div class="inicio-conteudo">
+
+            <div class="icone">🔬</div>
+
+            <h1>Lentes no nosso dia a dia</h1>
+
+            <p>
+                Você já percebeu que as lentes estão presentes
+                em vários objetos que usamos todos os dias?
+            </p>
+
+            <p>
+                Elas aparecem em óculos, câmeras, lupas,
+                microscópios e muitos outros equipamentos.
+            </p>
+
+            <a href="#lentes" class="botao">
+                Vamos aprender! ✨
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- EXPLICAÇÃO -->
+    <section class="introducao">
+
+        <span class="etiqueta">FÍSICA</span>
+
+        <h2>🔎 O que são lentes?</h2>
+
+        <p>
+            Lentes são objetos transparentes capazes de
+            modificar a direção da luz. Dependendo do seu
+            formato, elas podem aproximar ou afastar os
+            raios luminosos.
+        </p>
+
+        <p>
+            Por isso, elas são muito importantes em
+            diferentes objetos do nosso cotidiano.
+        </p>
+
+    </section>
+
+
+    <!-- FLASHCARDS -->
+    <section id="lentes" class="flashcards-section">
+
+        <span class="etiqueta">FLASHCARDS</span>
+
+        <h2>🃏 Conheça as lentes</h2>
+
+        <p class="centralizado">
+            Passe pelos cards e descubra as características
+            de cada tipo de lente.
+        </p>
+
+
+        <div class="cards">
+
+
+            <!-- LENTE CONVEXA -->
+            <article class="card">
+
+                <div class="imagem-card">
+
+                    <div class="desenho-lente convexa">
+                        )(
+                    </div>
+
+                </div>
+
+                <div class="conteudo-card">
+
+                    <span class="numero">01</span>
+
+                    <h3>Lente convexa</h3>
+
+                    <p>
+                        É mais espessa no centro e mais fina
+                        nas bordas. Ela faz os raios de luz
+                        se aproximarem.
+                    </p>
+
+                    <strong>
+                        🔍 Exemplo: lupa
+                    </strong>
+
+                </div>
+
+            </article>
+
+
+            <!-- LENTE CÔNCAVA -->
+            <article class="card">
+
+                <div class="imagem-card">
+
+                    <div class="desenho-lente concava">
+                        () 
+                    </div>
+
+                </div>
+
+                <div class="conteudo-card">
+
+                    <span class="numero">02</span>
+
+                    <h3>Lente côncava</h3>
+
+                    <p>
+                        É mais fina no centro e mais espessa
+                        nas bordas. Ela faz os raios de luz
+                        se afastarem.
+                    </p>
+
+                    <strong>
+                        👓 Exemplo: alguns óculos
+                    </strong>
+
+                </div>
+
+            </article>
+
+
+            <!-- CONVERGENTE -->
+            <article class="card">
+
+                <div class="imagem-card">
+
+                    <div class="raios">
+                        ↘ ↓ ↙
+                        <br>
+                        ✨
+                    </div>
+
+                </div>
+
+                <div class="conteudo-card">
+
+                    <span class="numero">03</span>
+
+                    <h3>Lente convergente</h3>
+
+                    <p>
+                        É uma lente que faz os raios de luz
+                        se encontrarem em um ponto chamado
+                        foco.
+                    </p>
+
+                    <strong>
+                        📷 Exemplo: câmeras
+                    </strong>
+
+                </div>
+
+            </article>
+
+
+            <!-- DIVERGENTE -->
+            <article class="card">
+
+                <div class="imagem-card">
+
+                    <div class="raios">
+                        ↖ ↑ ↗
+                        <br>
+                        ✨
+                    </div>
+
+                </div>
+
+                <div class="conteudo-card">
+
+                    <span class="numero">04</span>
+
+                    <h3>Lente divergente</h3>
+
+                    <p>
+                        É uma lente que faz os raios de luz
+                        se afastarem uns dos outros.
+                    </p>
+
+                    <strong>
+                        👓 Exemplo: correção de miopia
+                    </strong>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- QUIZ -->
+    <section id="quiz" class="quiz-section">
+
+        <span class="etiqueta">DESAFIO</span>
+
+        <h2>🧠 Quiz das lentes</h2>
+
+        <p class="centralizado">
+            Leia a definição e escolha a imagem correta.
+        </p>
+
+
+        <div class="quiz">
+
+            <div class="progresso">
+
+                <span id="numero-pergunta">
+                    Pergunta 1 de 5
+                </span>
+
+                <div class="barra">
+
+                    <div id="barra-progresso"></div>
+
+                </div>
+
+            </div>
+
+
+            <h3 id="pergunta">
+                Carregando pergunta...
+            </h3>
+
+
+            <div id="opcoes"></div>
+
+
+            <div id="resultado"></div>
+
+
+            <button
+                id="proxima"
+                class="botao"
+                onclick="proximaPergunta()"
+                style="display: none;"
+            >
+                Próxima pergunta →
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- VÍDEO -->
+    <section class="video-section">
+
+        <span class="etiqueta">PARA FINALIZAR</span>
+
+        <h2>🎥 Lentes na prática</h2>
+
+        <p class="centralizado">
+            Agora que você aprendeu sobre as lentes,
+            assista ao vídeo para revisar o conteúdo.
+        </p>
+
+
+        <div class="video-container">
+
+            <video controls>
+
+                <source
+                    src="1000065262.mp4"
+                    type="video/mp4"
+                >
+
+                Seu navegador não consegue reproduzir
+                este vídeo.
+
+            </video>
+
+        </div>
+
+    </section>
+
+
+    <!-- FINAL -->
+    <footer>
+
+        <div class="icone-footer">
+            🔬
+        </div>
+
+        <h2>
+            A física está em todo lugar!
+        </h2>
+
+        <p>
+            Trabalho escolar sobre lentes e seus usos
+            no nosso dia a dia.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+  </html>
