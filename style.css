@@ -561,3 +561,61 @@ footer p {
     }
 
   }
+/* =========================
+   CURIOSIDADES - COLE NO FINAL
+========================= */
+.curiosidades-section {
+    background: #fff9fd;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.curiosidades-grid {
+    max-width: 1100px;
+    margin: 40px auto 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    text-align: left;
+}
+
+.curiosidade {
+    background: white;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+    box-shadow: 0 8px 20px rgba(90, 40, 120, 0.1);
+    border-left: 5px solid #d96bea;
+    transition: 0.3s;
+}
+
+.curiosidade:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(90, 40, 120, 0.15);
+}
+
+.curiosidade span {
+    font-size: 18px;
+    font-weight: bold;
+    background: #f7eaff;
+    color: #7b32a1;
+    min-width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.curiosidade h4 {
+    color: #7b32a1;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.curiosidade p {
+    font-size: 14px;
+    line-height: 1.4;
+}
